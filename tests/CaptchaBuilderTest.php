@@ -12,10 +12,9 @@ class CaptchaBuilderTest extends TestCase
         $captcha = new CaptchaBuilder();
         $captcha
             ->build()
-            ->save('out.jpg')
-        ;
+            ->save('out.jpg');
 
-        $this->assertTrue(file_exists(__DIR__.'/../out.jpg'));
+        $this->assertTrue(file_exists(__DIR__ . '/../out.jpg'));
     }
 
     public function testFingerPrint()

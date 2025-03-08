@@ -18,6 +18,7 @@ class PhraseBuilder implements PhraseBuilderInterface
      * @var string
      */
     public $charset;
+
     /**
      * Constructs a PhraseBuilder with given parameters
      */
@@ -56,7 +57,7 @@ class PhraseBuilder implements PhraseBuilderInterface
     {
         return self::doNiceize($str);
     }
-    
+
     /**
      * A static helper to niceize
      */

@@ -44,10 +44,10 @@ class ImageFileHandler
      */
     public function __construct($imageFolder, $webPath, $gcFreq, $expiration)
     {
-        $this->imageFolder      = $imageFolder;
-        $this->webPath          = $webPath;
-        $this->gcFreq           = $gcFreq;
-        $this->expiration       = $expiration;
+        $this->imageFolder = $imageFolder;
+        $this->webPath = $webPath;
+        $this->gcFreq = $gcFreq;
+        $this->expiration = $expiration;
     }
 
     /**

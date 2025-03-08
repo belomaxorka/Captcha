@@ -3,7 +3,7 @@
 session_start();
 
 // Including the autoload (you need to composer install in the main directory)
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use belomaxorka\Captcha\CaptchaBuilder;
 
@@ -18,5 +18,4 @@ header('Content-Type: image/jpeg');
 // Running the actual rendering of the captcha image
 $captcha
     ->build()
-    ->output()
-;
+    ->output();
