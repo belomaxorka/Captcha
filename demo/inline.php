@@ -15,8 +15,10 @@ $captcha->build();
     <title>Inline Captcha</title>
 </head>
 <body>
-<h1>Inline Captcha</h1>
-<img src="<?php echo $captcha->inline(); ?>"/><br/>
-Phrase: <?php echo $captcha->getPhrase(); ?>
+<div>
+    <h1>Inline Captcha</h1>
+    <img src="<?php echo $captcha->inline(); ?>"/><br/>
+    Phrase: <?php echo $captcha->getPhrase(); ?>
+</div>
 </body>
 </html>
