@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use belomaxorka\Captcha\CaptchaBuilder;
+use Gregwar\Captcha\CaptchaBuilder;
 
 /**
  * Generates 1000 captchas and try to read their code with the

@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use belomaxorka\Captcha\CaptchaBuilder;
+use Gregwar\Captcha\CaptchaBuilder;
 
 echo count(CaptchaBuilder::create()
     ->build()

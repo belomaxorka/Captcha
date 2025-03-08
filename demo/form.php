@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use belomaxorka\Captcha\PhraseBuilder;
+use Gregwar\Captcha\PhraseBuilder;
 
 // We need the session to check the phrase after submitting
 session_start();
