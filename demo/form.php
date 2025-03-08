@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__.'/../vendor/autoload.php';
-use Gregwar\Captcha\PhraseBuilder;
+use belomaxorka\Captcha\PhraseBuilder;
 
 // We need the session to check the phrase after submitting
 session_start();
@@ -21,7 +21,7 @@ session_start();
 ?>
     <form method="post">
         Copy the CAPTCHA:
-        <?php 
+        <?php
             // See session.php, where the captcha is actually rendered and the session phrase
             // is set accordingly to the image displayed
         ?>

@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__.'/../vendor/autoload.php';
 
-use Gregwar\Captcha\CaptchaBuilder;
+use belomaxorka\Captcha\CaptchaBuilder;
 
 $captcha = new CaptchaBuilder();
 $captcha->build();
@@ -17,6 +17,6 @@ $captcha->build();
 
         <img src="<?php echo $captcha->inline(); ?>"/><br/>
         Phrase: <?php echo $captcha->getPhrase(); ?>
-        
+
     </body>
 </body>
