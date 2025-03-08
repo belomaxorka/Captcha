@@ -2,7 +2,11 @@
     "name": "belomaxorka/captcha",
     "type": "library",
     "description": "Captcha generator",
-    "keywords": ["captcha", "spam", "bot"],
+    "keywords": [
+        "captcha",
+        "spam",
+        "bot"
+    ],
     "homepage": "https://github.com/belomaxorka/Captcha",
     "license": "MIT",
     "authors": [
@@ -20,6 +24,7 @@
         "php": ">=5.3.0",
         "ext-gd": "*",
         "ext-mbstring": "*",
+        "ext-fileinfo": "*",
         "symfony/finder": "*"
     },
     "autoload": {
