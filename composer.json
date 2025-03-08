@@ -1,9 +1,9 @@
 {
-    "name": "gregwar/captcha",
+    "name": "belomaxorka/captcha",
     "type": "library",
     "description": "Captcha generator",
     "keywords": ["captcha", "spam", "bot"],
-    "homepage": "https://github.com/Gregwar/Captcha",
+    "homepage": "https://github.com/belomaxorka/Captcha",
     "license": "MIT",
     "authors": [
         {

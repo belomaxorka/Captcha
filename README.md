@@ -13,7 +13,7 @@ With composer :
 {
     ...
     "require": {
-        "gregwar/captcha": "1.*"
+        "belomaxorka/captcha": "1.*"
     }
 }
 ```
