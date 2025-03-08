@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use belomaxorka\Captcha\CaptchaBuilder;
 
@@ -7,16 +7,16 @@ $captcha = new CaptchaBuilder();
 $captcha->build();
 
 ?>
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Inline Captcha</title>
+</head>
 <body>
-    <html>
-        <meta charset="utf-8" />
-    </html>
-    <body>
-        <h1>Inline Captcha</h1>
-
-        <img src="<?php echo $captcha->inline(); ?>"/><br/>
-        Phrase: <?php echo $captcha->getPhrase(); ?>
-
-    </body>
+<h1>Inline Captcha</h1>
+<img src="<?php echo $captcha->inline(); ?>"/><br/>
+Phrase: <?php echo $captcha->getPhrase(); ?>
 </body>
+</html>
