@@ -93,6 +93,7 @@ You can use these functions:
 * **setBackgroundImages(array($imagepath1, $imagePath2))**, Sets custom background images to be used as captcha background. It is recommended to disable image effects when passing custom images for background (ignore_all_effects). A random image is selected from the list passed, the full paths to the image files must be passed.
 * **setInterpolation($interpolate)**, enable or disable the interpolation (enabled by default), disabling it will be quicker but the images will look uglier
 * **setIgnoreAllEffects($ignoreAllEffects)**, disable all effects on the captcha image. Recommended to use when passing custom background images for the captcha.
+* **setIgnorePostEffects($ignorePostEffects)**, disable post effects on the captcha image (edge, negate, contrast, colorize). Note: **setIgnoreAllEffects** also disables post effects.
 * **testPhrase($phrase)**, returns true if the given phrase is good
 * **setMaxBehindLines($lines)**, sets the maximum number of lines behind the code
 * **setMaxFrontLines($lines)**, sets the maximum number of lines on the front of the code
