@@ -7,7 +7,7 @@ Captcha
 Installation
 ============
 
-With composer:
+It's available for [Composer](https://getcomposer.org):
 
 ``` json
 {

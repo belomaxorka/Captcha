@@ -13,11 +13,18 @@
         {
             "name": "Grégoire Passault",
             "email": "g.passault@gmail.com",
-            "homepage": "http://www.gregwar.com/"
+            "homepage": "https://www.gregwar.com/",
+            "role": "Developer"
         },
         {
             "name": "Jeremy Livingston",
             "email": "jeremy.j.livingston@gmail.com"
+        },
+        {
+            "name": "belomaxorka",
+            "email": "roman25052006.kelesh@gmail.com",
+            "homepage": "https://belomaxorka.github.io/",
+            "role": "Developer"
         }
     ],
     "require": {
