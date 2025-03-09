@@ -1,7 +1,9 @@
+.vscode/
 .idea/
-demo/*.jpg
-demo/*.pgm
 demo/temp/
 vendor/
-composer.phar
-composer.lock
+*.jpg
+*.pgm
+*.lock
+*.phar
+*.cache
