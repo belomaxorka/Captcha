@@ -154,6 +154,9 @@ class CaptchaBuilder implements CaptchaBuilderInterface
 
     /**
      * Enables/disable distortion
+     *
+     * @param bool $distortion
+     * @return CaptchaBuilder
      */
     public function setDistortion($distortion)
     {
@@ -249,7 +252,7 @@ class CaptchaBuilder implements CaptchaBuilderInterface
      */
     public function setIgnoreAllEffects($ignoreAllEffects)
     {
-        $this->ignoreAllEffects = $ignoreAllEffects;
+        $this->ignoreAllEffects = (bool)$ignoreAllEffects;
 
         return $this;
     }
