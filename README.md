@@ -1,4 +1,4 @@
-Captcha
+Captcha (Based on `gregwar/Captcha`)
 =======
 
 ![Captchas examples](http://gregwar.com/captchas.png)
