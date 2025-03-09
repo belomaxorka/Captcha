@@ -4,8 +4,14 @@
     "description": "Captcha generator",
     "keywords": [
         "captcha",
+        "anti-spam",
+        "spam-protection",
         "spam",
-        "bot"
+        "obfuscation",
+        "security",
+        "anti-bot",
+        "no-bot",
+        "bot-protection"
     ],
     "homepage": "https://github.com/belomaxorka/Captcha",
     "license": "MIT",
