@@ -101,6 +101,13 @@ class CaptchaBuilder implements CaptchaBuilderInterface
     protected $ignoreAllEffects = false;
 
     /**
+     * Ignore post effects
+     *
+     * @var bool
+     */
+    protected $ignorePostEffects = false;
+
+    /**
      * Allowed image types for the background images
      *
      * @var array
@@ -253,6 +260,19 @@ class CaptchaBuilder implements CaptchaBuilderInterface
     public function setIgnoreAllEffects($ignoreAllEffects)
     {
         $this->ignoreAllEffects = (bool)$ignoreAllEffects;
+
+        return $this;
+    }
+
+    /**
+     * Sets the ignorePostEffects value
+     *
+     * @param bool $ignorePostEffects
+     * @return CaptchaBuilder
+     */
+    public function setIgnorePostEffects($ignorePostEffects)
+    {
+        $this->ignorePostEffects = (bool)$ignorePostEffects;
 
         return $this;
     }
@@ -483,7 +503,7 @@ class CaptchaBuilder implements CaptchaBuilderInterface
         }
 
         // Post effects
-        if (!$this->ignoreAllEffects) {
+        if (!$this->ignoreAllEffects && !$this->ignorePostEffects) {
             $this->postEffect($image);
         }
 
