@@ -650,7 +650,7 @@ class CaptchaBuilder implements CaptchaBuilderInterface
      * @param $image
      * @param $x
      * @param $y
-     *
+     * @param $background
      * @return int
      */
     protected function getCol($image, $x, $y, $background)
