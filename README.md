@@ -7,7 +7,7 @@ Captcha
 Installation
 ============
 
-With composer :
+With composer:
 
 ``` json
 {
@@ -21,7 +21,7 @@ With composer :
 Usage
 =====
 
-You can create a captcha with the `CaptchaBuilder` :
+You can create a captcha with the `CaptchaBuilder`:
 
 ```php
 <?php
@@ -32,7 +32,7 @@ $builder = new CaptchaBuilder;
 $builder->build();
 ```
 
-You can then save it to a file :
+You can then save it to a file:
 
 ```php
 <?php
@@ -40,7 +40,7 @@ You can then save it to a file :
 $builder->save('out.jpg');
 ```
 
-Or output it directly :
+Or output it directly:
 
 ```php
 <?php
@@ -55,7 +55,7 @@ Or inline it directly in the HTML page:
 <img src="<?php echo $builder->inline(); ?>" />
 ```
 
-You'll be able to get the code and compare it with a user input :
+You'll be able to get the code and compare it with a user input:
 
 ```php
 <?php
@@ -67,7 +67,7 @@ $_SESSION['phrase'] = $builder->getPhrase();
 
 You can compare the phrase with user input:
 ```php
-if($builder->testPhrase($userInput)) {
+if ($builder->testPhrase($userInput)) {
     // instructions if user phrase is good
 }
 else {
@@ -78,7 +78,7 @@ else {
 API
 ===
 
-You can use theses functions :
+You can use these functions:
 
 * **__construct($phrase = null)**, constructs the builder with the given phrase, if the phrase is null, a random one will be generated
 * **getPhrase()**, allow you to get the phrase contents
@@ -131,13 +131,13 @@ render a captcha and check it after the submission
 Symfony Bundle
 ================
 
-You can have a look at the following repository to enjoy the Symfony 2 bundle packaging this captcha generator :
+You can have a look at the following repository to enjoy the Symfony 2 bundle packaging this captcha generator:
 https://github.com/Gregwar/CaptchaBundle
 
 Yii2 Extension
 ===============
 
-You can use the following extension for integrating with Yii2 Framework :
+You can use the following extension for integrating with Yii2 Framework:
 https://github.com/juliardi/yii2-captcha
 
 License
