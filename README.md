@@ -6,7 +6,7 @@ Captcha (Based on `gregwar/Captcha`)
 
 Requirements
 ============
-* PHP Versions: `5.3.0` and above (up to `8.4.*`)
+* PHP Versions: `5.3` and above (up to `8.4`).
 * PHP Extensions: `gd`, `mbstring`, `fileinfo` (enabled by default).
 
 Installation
