@@ -87,6 +87,13 @@ class CaptchaBuilder implements CaptchaBuilderInterface
     protected $maxOffset = 5;
 
     /**
+     * Scatter effect
+     *
+     * @var bool
+     */
+    protected $scatterEffect = true;
+
+    /**
      * Is the interpolation enabled ?
      *
      * @var bool
@@ -99,11 +106,6 @@ class CaptchaBuilder implements CaptchaBuilderInterface
      * @var bool
      */
     protected $ignoreAllEffects = false;
-
-    /**
-     * @var bool
-     */
-    protected $scatterEffect = true;
 
     /**
      * Ignore post effects
@@ -262,7 +264,7 @@ class CaptchaBuilder implements CaptchaBuilderInterface
      * @param bool $scatterEffect
      * @return $this
      */
-    public function setscatterEffect($scatterEffect)
+    public function setScatterEffect($scatterEffect)
     {
         $this->scatterEffect = (bool)$scatterEffect;
 
