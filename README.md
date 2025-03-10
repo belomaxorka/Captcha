@@ -18,7 +18,7 @@ It's available for [Composer](https://getcomposer.org):
 composer require belomaxorka/captcha
 ```
 
-How to migrate from `gregwar/Captcha` package
+How to migrate
 ============
 
 Just replace:
