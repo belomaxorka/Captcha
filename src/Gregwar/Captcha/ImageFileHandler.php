@@ -53,7 +53,7 @@ class ImageFileHandler
     /**
      * Saves the provided image content as a file
      *
-     * @param string $contents
+     * @param $contents
      *
      * @return string
      */
