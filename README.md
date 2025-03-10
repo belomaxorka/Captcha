@@ -27,6 +27,7 @@ You can create a captcha with the `CaptchaBuilder`:
 <?php
 
 use Gregwar\Captcha\CaptchaBuilder;
+use Gregwar\Captcha\PhraseBuilder;
 
 $builder = new CaptchaBuilder;
 $builder->build();
@@ -60,7 +61,10 @@ You'll be able to get the code and compare it with a user input:
 ```php
 <?php
 
-// Example: storing the phrase in the session to test for the user 
+// Create session to store $_SESSION['phrase']
+session_start();
+
+// Example: storing the phrase in the session to test for the user
 // input later
 $_SESSION['phrase'] = $builder->getPhrase();
 ```
@@ -69,8 +73,17 @@ You can compare the phrase with user input:
 ```php
 if ($builder->testPhrase($userInput)) {
     // instructions if user phrase is good
+} else {
+    // user phrase is wrong
 }
-else {
+```
+
+Or whe using HTML forms:
+
+```php
+if (isset($_SESSION['phrase']) && PhraseBuilder::comparePhrases($_SESSION['phrase'], $_POST['phrase'])) {
+    // instructions if user phrase is good
+} else {
     // user phrase is wrong
 }
 ```
@@ -141,7 +154,7 @@ Yii2 Extension
 You can use the following extension for integrating with Yii2 Framework:
 https://github.com/juliardi/yii2-captcha
 
-Demo
+Examples
 =======
 
 Have a look at the examples inside the `demo` folder, which should give you an impression of what's possible - or simply whip up a PHP development server:
@@ -153,7 +166,7 @@ cd demo
 # Launch server
 php -S localhost:3000
 
-# All examples are now available in your browser, eg 'http://localhost:3000/'
+# All examples are now available in your browser, eg 'http://localhost:3000/form.php'
 ```
 
 License
