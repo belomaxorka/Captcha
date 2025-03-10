@@ -78,10 +78,10 @@ if ($builder->testPhrase($userInput)) {
 }
 ```
 
-Or whe using HTML forms:
+Or with using `PhraseBuilder::comparePhrases`:
 
 ```php
-if (isset($_SESSION['phrase']) && PhraseBuilder::comparePhrases($_SESSION['phrase'], $_POST['phrase'])) {
+if (PhraseBuilder::comparePhrases($_SESSION['phrase'], $userInput)) {
     // instructions if user phrase is good
 } else {
     // user phrase is wrong
