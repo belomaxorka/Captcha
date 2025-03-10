@@ -4,6 +4,11 @@ Captcha (Based on `gregwar/Captcha`)
 ![Captchas examples](http://gregwar.com/captchas.png)
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YUXRLWHQSWS6L)
 
+Requirements
+============
+* PHP Versions: `5.3.0` and above (up to `8.4.*`)
+* PHP Extensions: `gd`, `mbstring`, `fileinfo` (enabled by default).
+
 Installation
 ============
 
