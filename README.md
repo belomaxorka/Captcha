@@ -14,6 +14,25 @@ Installation
 
 It's available for [Composer](https://getcomposer.org):
 
+```shell
+composer require belomaxorka/captcha
+```
+
+How to migrate from `gregwar/Captcha` package
+============
+
+Just replace:
+``` json
+{
+    ...
+    "require": {
+        "gregwar/captcha": "1.*"
+    }
+}
+```
+
+To:
+
 ``` json
 {
     ...
@@ -83,7 +102,7 @@ if ($builder->testPhrase($userInput)) {
 }
 ```
 
-Or with using `PhraseBuilder` class:
+Or with using `PhraseBuilder`:
 
 ```php
 if (PhraseBuilder::comparePhrases($_SESSION['phrase'], $userInput)) {
