@@ -78,7 +78,7 @@ if ($builder->testPhrase($userInput)) {
 }
 ```
 
-Or with using `PhraseBuilder::comparePhrases`:
+Or with using `PhraseBuilder` class:
 
 ```php
 if (PhraseBuilder::comparePhrases($_SESSION['phrase'], $userInput)) {
