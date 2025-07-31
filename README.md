@@ -1,3 +1,37 @@
+# ⚠️ ARCHIVED REPOSITORY
+
+## This repository is now archived and no longer maintained.
+
+This fork was originally created to provide bug fixes and PHP compatibility updates that were not being merged into the upstream repository. However, **as of version v1.3.0, the original repository has incorporated all necessary fixes and updates**.
+
+## 🔄 Migration Notice
+
+**Please migrate to the original repository:** [gregwar/captcha](https://github.com/Gregwar/Captcha)
+
+The upstream repository is now actively maintained and includes all the improvements that were previously only available in this fork.
+
+## Why was this fork created?
+
+This fork served as a temporary solution when:
+- Critical bug fixes were not being merged upstream
+- PHP version compatibility issues needed to be addressed
+- The original repository appeared to be inactive
+
+## Current Status
+
+✅ **Original repository is now active and maintained**  
+✅ **All fixes have been merged upstream**  
+❌ **This fork is no longer necessary**
+
+---
+
+**For new projects:** Use the original repository  
+**For existing projects:** Please plan migration to the upstream repository
+
+Thank you to everyone who used this fork during the transition period!
+
+---
+
 Captcha (Based on `gregwar/Captcha`)
 =======
 
